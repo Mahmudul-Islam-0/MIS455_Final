@@ -8,6 +8,10 @@ body {
     background-image: url(bg2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 
 }
 
@@ -26,7 +30,7 @@ body {
     padding-bottom: 10px;
 }
 
-#searchBar{
+#searchBar {
     display: flex;
     justify-content: center;
 }
@@ -50,16 +54,26 @@ button {
     background-color: transparent;
     border: none;
     padding: 10px 0px;
-    
+
 
 }
 
-.weatherStyle{
+.weatherStyle {
     font-size: xx-large;
     display: flex;
     justify-content: space-around;
+    color: yellow;
 }
 
-#container{
+#container {
     padding-top: 80px;
+    
+}
+.container.div{
+    display: block;
+    flex-direction: column-reverse;
+}
+
+.conditon{
+    display: flex;
 }

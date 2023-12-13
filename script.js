@@ -23,13 +23,14 @@ function display(data) {
     const windSpeed = data.wind.speed;
     const country = data.sys.country;
     const iconCode = data.weather[0].icon;
-    const iconUrl = `http://openweathermap.org/img/w/${iconCode}.png`;
+    const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@4x.png`;
 
     var oldContent = document.getElementById("container");
     oldContent.textContent = "";
 
     var newDiv = document.createElement("div");
     newDiv.innerHTML = `  <div>
+                          <img src="location2.png">
                           Country ID: ${data.weather[0].id}<br>
                           Country: ${country}<br>
                           </div>
@@ -38,9 +39,10 @@ function display(data) {
                           Humidity: ${humidity}<br>
                           Temparature: ${temperature}<br>
                           </div>
-                          <div>
-                          Weather Codition: ${description} <br>
-                          <img src="${iconUrl}">                    
+                          <div>                          
+                          Weather Codition: ${description} 
+                          <div><img src="${iconUrl}"></div>
+                          </div>                    
                           </div>
                           `
 
