@@ -31,7 +31,7 @@ body {
     justify-content: center;
 }
 
-#searchbar {
+#searchBox {
     width: 20vw;
     height: 3.5vh;
     box-sizing: border-box;
@@ -54,38 +54,12 @@ button {
 
 }
 
-
-#current_day {
-    width: 100vw;
-    height: 55vh;
+.weatherStyle{
+    font-size: xx-large;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-
 }
 
-#other_days {
-    width: 100vw;
-    height: 30vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-}
-.wcards{
-
-    background-color: azure;
-    opacity: 0.7;
-    border-radius: 10px;
-    padding: 20px;
-
-}
-#today{
-    display: flex;
-}
-#today p{
-    font-size: 50px;
-}
-#today img{
-    padding-left: 10px;
+#container{
+    padding-top: 80px;
 }
