@@ -30,7 +30,7 @@ function display(data) {
 
     var newDiv = document.createElement("div");
     newDiv.innerHTML = `  <div>
-                          <img src="location2.png">
+                          <img src="location2.png"><br>
                           Country ID: ${data.weather[0].id}<br>
                           Country: ${country}<br>
                           </div>
