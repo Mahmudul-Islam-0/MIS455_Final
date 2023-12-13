@@ -1,19 +1,12 @@
-function calculate() {
+function connect(){
 
-    var userName = document.getElementById("nameBox").value;
-    var userCourse = parseInt(document.getElementById("courseBox").value);
-
-    //var courseCount = parseInt(userCourse);
-
-    var fees = userCourse * 10000;
-
-
-    document.getElementById("content").innerText = "Total tuition fees: " + fees;
-    document.getElementById("content").innerHTML =
-        `Student Name <b><span class="red">${userName}</span> </b> <br><br>
-    Courses taken: <b>${userCourse}</b> <br><br> 
-    <h4> Total fees: <b>${fees}</b>`;
-
-}
-
-
+    var searchTerm = document.getElementById("searchBox").value ; 
+   
+    var url = `https://www.themealdb.com/api/json/v1/1/filter.php?a=${searchTerm}` ;
+    console.log (url);
+   
+    fetch (url)
+    .then (res => res.json())
+    .then (data => display(data))
+   
+   }

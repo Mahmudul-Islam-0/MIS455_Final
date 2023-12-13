@@ -1,28 +1,89 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Weather Forecast</title>
+
 </head>
+
+
 <body>
-    
-    <h2>Important practise session with JS</h2>
-    Enter Name: 
-    <input id="nameBox" type="text"><br><br>
-    Enter total courses taken:
-    <input id="courseBox" type="text"><br><br>
 
-    <button onclick="calculate()">Calculate total fees</button> <br><br>
 
-    <div id="content">
+    <div id="header">
 
+        <h1>Weather Forecast</h1>
+        <div id="searchBar">
+            <input id="searchbar" type="text" name="city" placeholder="  Enter city">
+            <button onclick="connect()"> Search</button>
+        </div> 
+       
+       
 
     </div>
 
-    <script src="script.js">
+    <div id="current_day">
+        <div >
+            <div id="today"><p><?=$city?></p><img src="location2.png" alt="nav_icon"></div>
+            
+            <p>01.01.23</p>
+            <p>Sunday</p>
+        </div>
 
-    </script>
+        <div><img src="" alt="weather_icon"></div>
+
+        <div>
+            <img src="" alt="temp">
+            <p>temp</p>
+
+            <p>pressure</p>
+            <p>humidity</p>
+            <p>windspeed</p>
+        </div>
+
+    </div>
+
+    <div id="other_days">
+
+        <div class="wcards">
+
+            <img src="" alt="wicon">
+            <p>temp</p>
+            <p>Date</p>
+
+        </div>
+
+        <div class="wcards">
+
+            <img src="" alt="wicon">
+            <p>temp</p>
+            <p>Date</p>
+
+        </div>
+
+        <div class="wcards">
+
+            <img src="" alt="wicon">
+            <p>temp</p>
+            <p>Date</p>
+
+        </div>
+
+        <div class="wcards">
+
+            <img src="" alt="wicon">
+            <p>temp</p>
+            <p>Date</p>
+
+        </div>
+
+    </div>
+
 
 </body>
+
 </html>
